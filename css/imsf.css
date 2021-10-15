@@ -1,0 +1,138 @@
+.squareBox {
+  position: relative; }
+  .squareBox:before {
+    display: block;
+    content: '';
+    padding-top: 100%; }
+
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0.8rem 0.05rem rgba(0, 0, 0, 0.4); }
+
+.imsf-b {
+  overflow: hidden;
+  background: transparent; }
+  .imsf-b:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FF0000;
+    transform-origin: 0 100%;
+    transform: skewX(45deg); }
+  .imsf-b:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FF0000;
+    transform-origin: 0 100%;
+    transform: skewX(-45deg) translatex(0%); }
+
+.imsf-c {
+  background-image: linear-gradient(#0000FF 0%, #0000FF 20%, #FFFFFF 20%, #FFFFFF 40%, #FF0000 40%, #FF0000 60%, #FFFFFF 60%, #FFFFFF 80%, #0000FF 80%); }
+
+.imsf-d {
+  background-image: linear-gradient(#FFFF00 0%, #FFFF00 25%, #0000FF 25%, #0000FF 50%, #0000FF 75%, #FFFF00 75%); }
+
+.imsf-e {
+  background-image: linear-gradient(#0000FF 50%, #FF0000 50%, #FF0000); }
+
+.imsf-f {
+  background-color: #FF0000;
+  background-image: linear-gradient(to left bottom, #FFFFFF 25%, transparent 25%, transparent 75%, #FFFFFF 75%), linear-gradient(to right bottom, #FFFFFF 25%, transparent 25%, transparent 75%, #FFFFFF 75%); }
+
+.imsf-g {
+  background-image: linear-gradient(90deg, #FFFF00 0%, #FFFF00 16.6%, #0000FF 16.6%, #0000FF 33.3%, #FFFF00 33.3%, #FFFF00 50%, #0000FF 50%, #0000FF 66.6%, #FFFF00 66.6%, #FFFF00 66.6%, #FFFF00 83.3%, #0000FF 83.3%); }
+
+.imsf-h {
+  background-image: linear-gradient(90deg, #FFFFFF 50%, #FF0000 50%, #FF0000); }
+
+.imsf-i {
+  background-image: radial-gradient(farthest-side circle at center center, #000000 0%, #000000 40%, #FFFF00 40%); }
+
+.imsf-j {
+  background-image: linear-gradient(#0000FF 0%, #0000FF 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #0000FF 66.6%); }
+
+.imsf-k {
+  background-image: linear-gradient(90deg, #FFFF00 50%, #0000FF 50%, #0000FF); }
+
+.imsf-l {
+  background-color: #FFFF00;
+  background-image: linear-gradient(transparent 50%, #000000 50%, #000000);
+  overflow: hidden; }
+  .imsf-l:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scaley(2) translatex(50%);
+    background-image: linear-gradient(#FFFF00 50%, #000000 50%, #000000);
+    background-size: 50%; }
+
+.imsf-m {
+  background-color: #0000FF;
+  background-image: linear-gradient(to left bottom, transparent 45%, #FFFFFF 45%, #FFFFFF 55%, transparent 55%), linear-gradient(to right bottom, transparent 45%, #FFFFFF 45%, #FFFFFF 55%, transparent 55%); }
+
+.imsf-n {
+  background-color: #0000FF;
+  background-image: repeating-linear-gradient(to left bottom, #FFFFFF 25%, transparent 25%, transparent 75%, #FFFFFF 75%, #FFFFFF), repeating-linear-gradient(to left bottom, #FFFFFF 25%, transparent 25%, transparent 75%, #FFFFFF 75%, #FFFFFF);
+  background-position: 0 0, 50% 50%;
+  background-size: 50% 50%; }
+
+.imsf-o {
+  background-image: linear-gradient(to left bottom, #FF0000 50%, #FFFF00 50%, #FFFF00); }
+
+.imsf-q {
+  background-color: #FFFF00; }
+
+.imsf-r {
+  background-color: #FF0000;
+  background-image: linear-gradient(transparent 40%, #FFFF00 40%, #FFFF00 60%, transparent 60%);
+  overflow: hidden; }
+  .imsf-r:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg) scalex(2);
+    background-image: linear-gradient(transparent 40%, #FFFF00 40%, #FFFF00 60%, transparent 60%); }
+
+.imsf-t {
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF0000 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #0000FF 66.6%); }
+
+.imsf-u {
+  background-color: #FF0000;
+  background-image: linear-gradient(transparent 50%, #FFFFFF 50%, #FFFFFF);
+  overflow: hidden; }
+  .imsf-u:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scaley(2) translatex(50%);
+    background-image: linear-gradient(#FF0000 50%, #FFFFFF 50%, #FFFFFF);
+    background-size: 50%; }
+
+.imsf-v {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(to left bottom, transparent 45%, #FF0000 45%, #FF0000 55%, transparent 55%), linear-gradient(to right bottom, transparent 45%, #FF0000 45%, #FF0000 55%, transparent 55%); }
+
+.imsf-x {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(transparent 40%, #0000FF 40%, #0000FF 60%, transparent 60%);
+  overflow: hidden; }
+  .imsf-x:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg) scalex(2);
+    background-image: linear-gradient(transparent 40%, #0000FF 40%, #0000FF 60%, transparent 60%); }
+
+.imsf-y {
+  background-image: linear-gradient(135deg, #FFFF00 0%, #FFFF00 10%, #FF0000 10%, #FF0000 20%, #FFFF00 20%, #FFFF00 30%, #FF0000 30%, #FF0000 40%, #FFFF00 40%, #FFFF00 50%, #FF0000 50%, #FF0000 60%, #FFFF00 60%, #FFFF00 70%, #FF0000 70%, #FF0000 80%, #FFFF00 80%, #FFFF00 90%, #FF0000 90%); }

@@ -1,0 +1,188 @@
+$imsf-red:#FF0000;
+$imsf-blue:#0000FF;
+$imsf-yellow:#FFFF00;
+$imsf-white:#FFFFFF;
+$imsf-black:#000000;
+
+.squareBox{
+	position: relative;
+	&:before{
+	display: block;
+	content: '';
+	padding-top: 100%;}
+}
+
+.content{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0.8rem 0.05rem rgba(0,0,0,0.4);
+}
+
+.imsf-a{
+}
+
+.imsf-b{
+	overflow:hidden;
+	background:transparent;
+		&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: $imsf-red;
+		transform-origin: 0 100%;
+		transform: skewX(45deg);
+	}
+	&:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: $imsf-red;
+		transform-origin: 0 100%;
+		transform: skewX(-45deg) translatex(0%);
+	}
+}
+
+.imsf-c{
+  background-image: linear-gradient($imsf-blue 0%, $imsf-blue 20%, $imsf-white 20%, $imsf-white 40%, $imsf-red 40%, $imsf-red 60%, $imsf-white 60%, $imsf-white 80%, $imsf-blue 80%);
+}
+
+.imsf-d{
+  background-image: linear-gradient($imsf-yellow 0%, $imsf-yellow 25%, $imsf-blue 25%, $imsf-blue 50%, $imsf-blue 75%, $imsf-yellow 75%);
+}
+
+.imsf-e{
+	background-image: linear-gradient($imsf-blue 50%, $imsf-red 50%, $imsf-red);
+}
+
+.imsf-f {
+	background-color: $imsf-red;
+	background-image: linear-gradient(to left bottom, $imsf-white 25%, transparent 25%, transparent 75%, $imsf-white 75%), linear-gradient(to right bottom, $imsf-white 25%, transparent 25%, transparent 75%, $imsf-white 75%);
+}
+
+.imsf-g{
+  background-image: linear-gradient(90deg, $imsf-yellow 0%, $imsf-yellow 16.6%, $imsf-blue 16.6%, $imsf-blue 33.3%, $imsf-yellow 33.3%, $imsf-yellow 50%, $imsf-blue 50%, $imsf-blue 66.6%, $imsf-yellow 66.6%, $imsf-yellow 66.6%, $imsf-yellow 83.3%, $imsf-blue 83.3%);
+}
+
+.imsf-h{
+	background-image: linear-gradient(90deg, $imsf-white 50%, $imsf-red 50%, $imsf-red);
+}
+
+.imsf-i{
+	background-image: radial-gradient(farthest-side circle at center center, $imsf-black 0%, $imsf-black 40%, $imsf-yellow 40%);
+}
+
+.imsf-j{
+	background-image: linear-gradient($imsf-blue 0%, $imsf-blue 33.3%, $imsf-white 33.3%, $imsf-white 66.6%, $imsf-blue 66.6%);
+}
+
+.imsf-k{
+	background-image: linear-gradient(90deg, $imsf-yellow 50%, $imsf-blue 50%, $imsf-blue);
+}
+
+.imsf-l{
+	background-color: $imsf-yellow;
+	background-image: linear-gradient(transparent 50%, $imsf-black 50%, $imsf-black);
+	overflow: hidden;
+	&:after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 100%;
+		transform: scaley(2) translatex(50%);
+		background-image: linear-gradient($imsf-yellow 50%, $imsf-black 50%, $imsf-black);
+		background-size: 50%;
+	}
+}
+
+.imsf-m{
+	background-color: $imsf-blue;
+	background-image: linear-gradient(to left bottom, transparent 45%, $imsf-white 45%, $imsf-white 55%, transparent 55%), linear-gradient(to right bottom, transparent 45%, $imsf-white 45%, $imsf-white 55%, transparent 55%);
+}
+
+.imsf-n{
+	background-color: $imsf-blue;
+	background-image: repeating-linear-gradient(to left bottom, $imsf-white 25%, transparent 25%, transparent 75%, $imsf-white 75%, $imsf-white), repeating-linear-gradient(to left bottom, $imsf-white 25%, transparent 25%, transparent 75%, $imsf-white 75%, $imsf-white);
+	background-position: 0 0, 50% 50%;
+	background-size: 50% 50%;
+}
+
+.imsf-o{
+  background-image: linear-gradient(to left bottom, $imsf-red 50%, $imsf-yellow 50%, $imsf-yellow);
+}
+
+.imsf-p{
+}
+
+.imsf-q{
+  background-color: $imsf-yellow;
+}
+
+.imsf-r{
+	background-color: $imsf-red;
+	background-image: linear-gradient(transparent 40%, $imsf-yellow 40%, $imsf-yellow 60%, transparent 60%);
+	overflow: hidden;
+	&:after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 100%;
+		transform: rotate(90deg) scalex(2);
+		background-image: linear-gradient(transparent 40%, $imsf-yellow 40%, $imsf-yellow 60%, transparent 60%);
+	}
+}
+
+.imsf-s{
+}
+
+.imsf-t{
+	background-image: linear-gradient(90deg, $imsf-red 0%, $imsf-red 33.3%, $imsf-white 33.3%, $imsf-white 66.6%, $imsf-blue 66.6%);
+}
+
+.imsf-u{
+	background-color: $imsf-red;
+	background-image: linear-gradient(transparent 50%, $imsf-white 50%, $imsf-white);
+	overflow: hidden;
+	&:after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 100%;
+		transform: scaley(2) translatex(50%);
+		background-image: linear-gradient($imsf-red 50%, $imsf-white 50%, $imsf-white);
+		background-size: 50%;
+	}
+}
+
+.imsf-v{
+	background-color: $imsf-white;
+	background-image: linear-gradient(to left bottom, transparent 45%, $imsf-red 45%, $imsf-red 55%, transparent 55%), linear-gradient(to right bottom, transparent 45%, $imsf-red 45%, $imsf-red 55%, transparent 55%);
+}
+
+.imsf-w{
+}
+
+.imsf-x{
+	background-color: $imsf-white;
+	background-image: linear-gradient(transparent 40%, $imsf-blue 40%, $imsf-blue 60%, transparent 60%);
+	overflow: hidden;
+	&:after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 100%;
+		transform: rotate(90deg) scalex(2);
+		background-image: linear-gradient(transparent 40%, $imsf-blue 40%, $imsf-blue 60%, transparent 60%);
+	}
+}
+
+.imsf-y{
+  background-image: linear-gradient(135deg, $imsf-yellow 0%, $imsf-yellow 10%, $imsf-red 10%, $imsf-red 20%, $imsf-yellow 20%, $imsf-yellow 30%, $imsf-red 30%, $imsf-red 40%, $imsf-yellow 40%, $imsf-yellow 50%, $imsf-red 50%, $imsf-red 60%, $imsf-yellow 60%, $imsf-yellow 70%, $imsf-red 70%, $imsf-red 80%, $imsf-yellow 80%, $imsf-yellow 90%, $imsf-red 90%);
+}
+
+.imsf-z{
+}
